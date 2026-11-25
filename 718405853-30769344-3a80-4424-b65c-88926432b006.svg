@@ -1,0 +1,299 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1972" height="1308" viewBox="0 0 1972 1308" role="img">
+<title>Overwatch: diagrama de clases</title>
+<desc>Diagrama UML con Personaje, roles Dps/Tanque/Healer, seis héroes, Inventario, Herramienta, interfaces Persistible y Curador, InventarioLlenoException, FabricaHeroes, RepositorioEquipo y Main.</desc>
+<defs>
+<marker id="tri" markerUnits="userSpaceOnUse" viewBox="0 0 16 16" refX="15" refY="8" markerWidth="16" markerHeight="16" orient="auto">
+<path d="M1,1 L15,8 L1,15 Z" fill="#FFFFFF" stroke="#444441" stroke-width="1.4" stroke-linejoin="miter"/></marker>
+<marker id="dia_fill" markerUnits="userSpaceOnUse" viewBox="0 0 22 14" refX="1" refY="7" markerWidth="22" markerHeight="14" orient="auto">
+<path d="M1,7 L11,1 L21,7 L11,13 Z" fill="#444441" stroke="#444441" stroke-width="1.2"/></marker>
+<marker id="dia_open" markerUnits="userSpaceOnUse" viewBox="0 0 22 14" refX="1" refY="7" markerWidth="22" markerHeight="14" orient="auto">
+<path d="M1,7 L11,1 L21,7 L11,13 Z" fill="#FFFFFF" stroke="#444441" stroke-width="1.4"/></marker>
+<marker id="arr" markerUnits="userSpaceOnUse" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="12" markerHeight="12" orient="auto">
+<path d="M1,1 L11,6 L1,11" fill="none" stroke="#444441" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker>
+</defs>
+<rect width="1972" height="1308" fill="#FFFFFF"/>
+<text x="24" y="38" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="bold" fill="#2C2C2A">Overwatch: diagrama de clases</text>
+<path d="M 470.0,575 L 470.0,508" fill="none" stroke="#444441" stroke-width="1.4" marker-end="url(#tri)"/>
+<path d="M 331.0,575 L 1514.0,575" fill="none" stroke="#444441" stroke-width="1.4"/>
+<path d="M 331.0,575 L 331.0,630" fill="none" stroke="#444441" stroke-width="1.4"/>
+<path d="M 901.0,575 L 901.0,630" fill="none" stroke="#444441" stroke-width="1.4"/>
+<path d="M 1514.0,575 L 1514.0,630" fill="none" stroke="#444441" stroke-width="1.4"/>
+<text x="480.0" y="565" text-anchor="start" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#444441">herencia (extends)</text>
+<path d="M 331.0,785 L 331.0,728" fill="none" stroke="#444441" stroke-width="1.4" marker-end="url(#tri)"/>
+<path d="M 194.5,785 L 467.5,785" fill="none" stroke="#444441" stroke-width="1.4"/>
+<path d="M 194.5,785 L 194.5,830" fill="none" stroke="#444441" stroke-width="1.4"/>
+<path d="M 467.5,785 L 467.5,830" fill="none" stroke="#444441" stroke-width="1.4"/>
+<path d="M 901.0,785 L 901.0,746" fill="none" stroke="#444441" stroke-width="1.4" marker-end="url(#tri)"/>
+<path d="M 764.5,785 L 1037.5,785" fill="none" stroke="#444441" stroke-width="1.4"/>
+<path d="M 764.5,785 L 764.5,830" fill="none" stroke="#444441" stroke-width="1.4"/>
+<path d="M 1037.5,785 L 1037.5,830" fill="none" stroke="#444441" stroke-width="1.4"/>
+<path d="M 1514.0,785 L 1514.0,746" fill="none" stroke="#444441" stroke-width="1.4" marker-end="url(#tri)"/>
+<path d="M 1356.0,785 L 1672.0,785" fill="none" stroke="#444441" stroke-width="1.4"/>
+<path d="M 1356.0,785 L 1356.0,830" fill="none" stroke="#444441" stroke-width="1.4"/>
+<path d="M 1672.0,785 L 1672.0,830" fill="none" stroke="#444441" stroke-width="1.4"/>
+<path d="M 641.5,130 L 1240.0,130" fill="none" stroke="#444441" stroke-width="1.4" marker-start="url(#dia_fill)"/>
+<text x="665.5" y="122" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#444441">1</text>
+<text x="1226.0" y="122" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#444441">1</text>
+<text x="940.75" y="122" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#444441">composición</text>
+<path d="M 1390.0,260 L 1390.0,340" fill="none" stroke="#444441" stroke-width="1.4" marker-start="url(#dia_open)"/>
+<text x="1414.0" y="290" text-anchor="start" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#444441">1</text>
+<text x="1400.0" y="330" text-anchor="start" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#444441">0..3</text>
+<text x="1452.0" y="304.0" text-anchor="start" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#444441">agregación</text>
+<path d="M 298.5,170 L 238.5,170 L 238.5,240 L 298.5,240" fill="none" stroke="#444441" stroke-width="1.4" marker-end="url(#arr)"/>
+<text x="230.5" y="164" text-anchor="end" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#444441">asociación</text>
+<text x="230.5" y="258" text-anchor="end" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#444441">compañero</text>
+<text x="292.5" y="232" text-anchor="end" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#444441">0..1</text>
+<path d="M 641.5,300 L 848.0,300" fill="none" stroke="#444441" stroke-width="1.4" stroke-dasharray="7 4" marker-end="url(#tri)"/>
+<text x="744.75" y="292" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#444441">implements</text>
+<path d="M 1240.0,230 L 1150,230 L 1150,280 L 1032.0,280" fill="none" stroke="#444441" stroke-width="1.4" stroke-dasharray="7 4" marker-end="url(#tri)"/>
+<path d="M 1229.5,420 L 940.0,420 L 940.0,340" fill="none" stroke="#444441" stroke-width="1.4" stroke-dasharray="7 4" marker-end="url(#tri)"/>
+<path d="M 1638.5,668 L 1786.0,668 L 1786.0,550" fill="none" stroke="#444441" stroke-width="1.4" stroke-dasharray="7 4" marker-end="url(#tri)"/>
+<text x="1712.25" y="660" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#444441">implements</text>
+<path d="M 1540.0,110 L 1590,110" fill="none" stroke="#444441" stroke-width="1.4" stroke-dasharray="7 4" marker-end="url(#arr)"/>
+<text x="1565.0" y="102" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#444441">lanza</text>
+<path d="M 687.5,1050 L 439.5,1050" fill="none" stroke="#444441" stroke-width="1.4" stroke-dasharray="7 4" marker-end="url(#arr)"/>
+<text x="563.5" y="1042" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#444441">usa</text>
+<path d="M 1287.0,1050 L 1052.5,1050" fill="none" stroke="#444441" stroke-width="1.4" stroke-dasharray="7 4" marker-end="url(#arr)"/>
+<text x="1169.75" y="1042" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#444441">usa</text>
+<path d="M 1480.0,1164 L 1480.0,1198 L 250.0,1198 L 250.0,1110" fill="none" stroke="#444441" stroke-width="1.4" stroke-dasharray="7 4" marker-end="url(#arr)"/>
+<text x="865.0" y="1190" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#444441">usa</text>
+<path d="M 60.5,1085 L 24,1085 L 24,400 L 298.5,400" fill="none" stroke="#444441" stroke-width="1.4" stroke-dasharray="7 4" marker-end="url(#arr)"/>
+<text x="34" y="700" text-anchor="start" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#444441">crea</text>
+<g id="Personaje">
+<rect x="298.5" y="70" width="343" height="438" fill="#EEF5FC"/>
+<rect x="298.5" y="70" width="343" height="44" fill="#B5D4F4"/>
+<text x="470.0" y="86" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11" font-style="italic" fill="#0C447C">&#171;abstract&#187;</text>
+<text x="470.0" y="105" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="bold" font-style="italic" fill="#0C447C">Personaje</text>
+<line x1="298.5" y1="114" x2="641.5" y2="114" stroke="#185FA5" stroke-width="1"/>
+<line x1="298.5" y1="212" x2="641.5" y2="212" stroke="#185FA5" stroke-width="1"/>
+<text x="308.5" y="131" font-family="Consolas, 'DejaVu Sans Mono', 'Courier New', monospace" font-size="12" fill="#2C2C2A" xml:space="preserve">- nombre: String {final}</text>
+<text x="308.5" y="149" font-family="Consolas, 'DejaVu Sans Mono', 'Courier New', monospace" font-size="12" fill="#2C2C2A" xml:space="preserve">- vidaMaxima: int {final}</text>
+<text x="308.5" y="167" font-family="Consolas, 'DejaVu Sans Mono', 'Courier New', monospace" font-size="12" fill="#2C2C2A" xml:space="preserve">- vida: int</text>
+<text x="308.5" y="185" font-family="Consolas, 'DejaVu Sans Mono', 'Courier New', monospace" font-size="12" fill="#2C2C2A" xml:space="preserve">- inventario: Inventario {final}</text>
+<text x="308.5" y="203" font-family="Consolas, 'DejaVu Sans Mono', 'Courier New', monospace" font-size="12" fill="#2C2C2A" xml:space="preserve">- companero: Personaje</text>
+<text x="308.5" y="229" font-family="Consolas, 'DejaVu Sans Mono', 'Courier New', monospace" font-size="12" fill="#2C2C2A" xml:space="preserve"># Personaje(nombre: String, vidaMaxima: int)</text>
+<text x="308.5" y="247" font-family="Consolas, 'DejaVu Sans Mono', 'Courier New', monospace" font-size="12" fill="#2C2C2A" font-style="italic" xml:space="preserve">+ getTipo(): String</text>
+<text x="308.5" y="265" font-family="Consolas, 'DejaVu Sans Mono', 'Courier New', monospace" font-size="12" fill="#2C2C2A" font-style="italic" xml:space="preserve"># calcularDanio(base: int): int</text>
+<text x="308.5" y="283" font-family="Consolas, 'DejaVu Sans Mono', 'Courier New', monospace" font-size="12" fill="#2C2C2A" xml:space="preserve">+ getNombre(): String</text>
+<text x="308.5" y="301" font-family="Consolas, 'DejaVu Sans Mono', 'Courier New', monospace" font-size="12" fill="#2C2C2A" xml:space="preserve">+ getVida(): int</text>
+<text x="308.5" y="319" font-family="Consolas, 'DejaVu Sans Mono', 'Courier New', monospace" font-size="12" fill="#2C2C2A" xml:space="preserve">+ getVidaMaxima(): int</text>
+<text x="308.5" y="337" font-family="Consolas, 'DejaVu Sans Mono', 'Courier New', monospace" font-size="12" fill="#2C2C2A" xml:space="preserve">+ getCompanero(): Personaje</text>
+<text x="308.5" y="355" font-family="Consolas, 'DejaVu Sans Mono', 'Courier New', monospace" font-size="12" fill="#2C2C2A" xml:space="preserve">+ equipar(h: Herramienta)</text>
+<text x="308.5" y="373" font-family="Consolas, 'DejaVu Sans Mono', 'Courier New', monospace" font-size="12" fill="#2C2C2A" xml:space="preserve">+ setCompanero(c: Personaje)</text>
+<text x="308.5" y="391" font-family="Consolas, 'DejaVu Sans Mono', 'Courier New', monospace" font-size="12" fill="#2C2C2A" xml:space="preserve">+ estaVivo(): boolean</text>
+<text x="308.5" y="409" font-family="Consolas, 'DejaVu Sans Mono', 'Courier New', monospace" font-size="12" fill="#2C2C2A" xml:space="preserve">+ recibirDanio(puntos: int): int</text>
+<text x="308.5" y="427" font-family="Consolas, 'DejaVu Sans Mono', 'Courier New', monospace" font-size="12" fill="#2C2C2A" xml:space="preserve">+ curar(puntos: int): int</text>
+<text x="308.5" y="445" font-family="Consolas, 'DejaVu Sans Mono', 'Courier New', monospace" font-size="12" fill="#2C2C2A" xml:space="preserve">+ atacar(objetivo: Personaje): int</text>
+<text x="308.5" y="463" font-family="Consolas, 'DejaVu Sans Mono', 'Courier New', monospace" font-size="12" fill="#2C2C2A" xml:space="preserve">+ ayudarCompanero(): int</text>
+<text x="308.5" y="481" font-family="Consolas, 'DejaVu Sans Mono', 'Courier New', monospace" font-size="12" fill="#2C2C2A" xml:space="preserve">+ serializar(): String</text>
+<text x="308.5" y="499" font-family="Consolas, 'DejaVu Sans Mono', 'Courier New', monospace" font-size="12" fill="#2C2C2A" xml:space="preserve">+ toString(): String</text>
+<rect x="298.5" y="70" width="343" height="438" fill="none" stroke="#185FA5" stroke-width="1.5"/>
+</g>
+<g id="Inventario">
+<rect x="1240.0" y="70" width="300" height="190" fill="#EEF5FC"/>
+<rect x="1240.0" y="70" width="300" height="30" fill="#B5D4F4"/>
+<text x="1390.0" y="90" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="bold" fill="#0C447C">Inventario</text>
+<line x1="1240.0" y1="100" x2="1540.0" y2="100" stroke="#185FA5" stroke-width="1"/>
+<line x1="1240.0" y1="144" x2="1540.0" y2="144" stroke="#185FA5" stroke-width="1"/>
+<text x="1250.0" y="117" font-family="Consolas, 'DejaVu Sans Mono', 'Courier New', monospace" font-size="12" fill="#2C2C2A" xml:space="preserve">- herramientas: Herramienta[3] {final}</text>
+<text x="1250.0" y="135" font-family="Consolas, 'DejaVu Sans Mono', 'Courier New', monospace" font-size="12" fill="#2C2C2A" xml:space="preserve">- cuantas: int</text>
+<text x="1250.0" y="161" font-family="Consolas, 'DejaVu Sans Mono', 'Courier New', monospace" font-size="12" fill="#2C2C2A" xml:space="preserve">+ Inventario()</text>
+<text x="1250.0" y="179" font-family="Consolas, 'DejaVu Sans Mono', 'Courier New', monospace" font-size="12" fill="#2C2C2A" xml:space="preserve">+ agregar(h: Herramienta)</text>
+<text x="1250.0" y="197" font-family="Consolas, 'DejaVu Sans Mono', 'Courier New', monospace" font-size="12" fill="#2C2C2A" xml:space="preserve">+ getCuantas(): int</text>
+<text x="1250.0" y="215" font-family="Consolas, 'DejaVu Sans Mono', 'Courier New', monospace" font-size="12" fill="#2C2C2A" xml:space="preserve">+ getHerramienta(i: int): Herramienta</text>
+<text x="1250.0" y="233" font-family="Consolas, 'DejaVu Sans Mono', 'Courier New', monospace" font-size="12" fill="#2C2C2A" xml:space="preserve">+ usarMejor(): int</text>
+<text x="1250.0" y="251" font-family="Consolas, 'DejaVu Sans Mono', 'Courier New', monospace" font-size="12" fill="#2C2C2A" xml:space="preserve">+ serializar(): String</text>
+<rect x="1240.0" y="70" width="300" height="190" fill="none" stroke="#185FA5" stroke-width="1.5"/>
+</g>
+<g id="Persistible">
+<rect x="848.0" y="260" width="184" height="80" fill="#FDF5E6"/>
+<rect x="848.0" y="260" width="184" height="44" fill="#FAC775"/>
+<text x="940.0" y="276" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11" font-style="italic" fill="#633806">&#171;interface&#187;</text>
+<text x="940.0" y="295" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="bold" fill="#633806">Persistible</text>
+<line x1="848.0" y1="304" x2="1032.0" y2="304" stroke="#854F0B" stroke-width="1"/>
+<line x1="848.0" y1="314" x2="1032.0" y2="314" stroke="#854F0B" stroke-width="1"/>
+<text x="858.0" y="331" font-family="Consolas, 'DejaVu Sans Mono', 'Courier New', monospace" font-size="12" fill="#2C2C2A" font-style="italic" xml:space="preserve">+ serializar(): String</text>
+<rect x="848.0" y="260" width="184" height="80" fill="none" stroke="#854F0B" stroke-width="1.5"/>
+</g>
+<g id="Herramienta">
+<rect x="1229.5" y="340" width="321" height="190" fill="#EEF5FC"/>
+<rect x="1229.5" y="340" width="321" height="30" fill="#B5D4F4"/>
+<text x="1390.0" y="360" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="bold" fill="#0C447C">Herramienta</text>
+<line x1="1229.5" y1="370" x2="1550.5" y2="370" stroke="#185FA5" stroke-width="1"/>
+<line x1="1229.5" y1="432" x2="1550.5" y2="432" stroke="#185FA5" stroke-width="1"/>
+<text x="1239.5" y="387" font-family="Consolas, 'DejaVu Sans Mono', 'Courier New', monospace" font-size="12" fill="#2C2C2A" xml:space="preserve">- nombre: String {final}</text>
+<text x="1239.5" y="405" font-family="Consolas, 'DejaVu Sans Mono', 'Courier New', monospace" font-size="12" fill="#2C2C2A" xml:space="preserve">- danio: int {final}</text>
+<text x="1239.5" y="423" font-family="Consolas, 'DejaVu Sans Mono', 'Courier New', monospace" font-size="12" fill="#2C2C2A" xml:space="preserve">- durabilidad: int</text>
+<text x="1239.5" y="449" font-family="Consolas, 'DejaVu Sans Mono', 'Courier New', monospace" font-size="12" fill="#2C2C2A" xml:space="preserve">+ Herramienta(nombre: String, danio: int)</text>
+<text x="1239.5" y="467" font-family="Consolas, 'DejaVu Sans Mono', 'Courier New', monospace" font-size="12" fill="#2C2C2A" xml:space="preserve">+ estaRota(): boolean</text>
+<text x="1239.5" y="485" font-family="Consolas, 'DejaVu Sans Mono', 'Courier New', monospace" font-size="12" fill="#2C2C2A" xml:space="preserve">+ usar(): int</text>
+<text x="1239.5" y="503" font-family="Consolas, 'DejaVu Sans Mono', 'Courier New', monospace" font-size="12" fill="#2C2C2A" xml:space="preserve">+ reparar()</text>
+<text x="1239.5" y="521" font-family="Consolas, 'DejaVu Sans Mono', 'Courier New', monospace" font-size="12" fill="#2C2C2A" xml:space="preserve">+ serializar(): String</text>
+<rect x="1229.5" y="340" width="321" height="190" fill="none" stroke="#185FA5" stroke-width="1.5"/>
+</g>
+<g id="InventarioLlenoException">
+<rect x="1590" y="70" width="221" height="82" fill="#FDF1F1"/>
+<rect x="1590" y="70" width="221" height="30" fill="#F7C1C1"/>
+<text x="1700.5" y="90" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="bold" fill="#791F1F">InventarioLlenoException</text>
+<line x1="1590" y1="100" x2="1811" y2="100" stroke="#A32D2D" stroke-width="1"/>
+<line x1="1590" y1="126" x2="1811" y2="126" stroke="#A32D2D" stroke-width="1"/>
+<text x="1600" y="117" font-family="Consolas, 'DejaVu Sans Mono', 'Courier New', monospace" font-size="12" fill="#2C2C2A" xml:space="preserve">- capacidad: int</text>
+<text x="1600" y="143" font-family="Consolas, 'DejaVu Sans Mono', 'Courier New', monospace" font-size="12" fill="#2C2C2A" xml:space="preserve">+ getCapacidad(): int</text>
+<rect x="1590" y="70" width="221" height="82" fill="none" stroke="#A32D2D" stroke-width="1.5"/>
+</g>
+<g id="Curador">
+<rect x="1640" y="470" width="292" height="80" fill="#FDF5E6"/>
+<rect x="1640" y="470" width="292" height="44" fill="#FAC775"/>
+<text x="1786.0" y="486" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11" font-style="italic" fill="#633806">&#171;interface&#187;</text>
+<text x="1786.0" y="505" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="bold" fill="#633806">Curador</text>
+<line x1="1640" y1="514" x2="1932" y2="514" stroke="#854F0B" stroke-width="1"/>
+<line x1="1640" y1="524" x2="1932" y2="524" stroke="#854F0B" stroke-width="1"/>
+<text x="1650" y="541" font-family="Consolas, 'DejaVu Sans Mono', 'Courier New', monospace" font-size="12" fill="#2C2C2A" font-style="italic" xml:space="preserve">+ curarAliado(aliado: Personaje): int</text>
+<rect x="1640" y="470" width="292" height="80" fill="none" stroke="#854F0B" stroke-width="1.5"/>
+</g>
+<g id="Dps">
+<rect x="206.5" y="630" width="249" height="98" fill="#F4F3FE"/>
+<rect x="206.5" y="630" width="249" height="44" fill="#CECBF6"/>
+<text x="331.0" y="646" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11" font-style="italic" fill="#3C3489">&#171;abstract&#187;</text>
+<text x="331.0" y="665" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="bold" font-style="italic" fill="#3C3489">Dps</text>
+<line x1="206.5" y1="674" x2="455.5" y2="674" stroke="#534AB7" stroke-width="1"/>
+<line x1="206.5" y1="684" x2="455.5" y2="684" stroke="#534AB7" stroke-width="1"/>
+<text x="216.5" y="701" font-family="Consolas, 'DejaVu Sans Mono', 'Courier New', monospace" font-size="12" fill="#2C2C2A" xml:space="preserve">+ getTipo(): String</text>
+<text x="216.5" y="719" font-family="Consolas, 'DejaVu Sans Mono', 'Courier New', monospace" font-size="12" fill="#2C2C2A" xml:space="preserve"># calcularDanio(base: int): int</text>
+<rect x="206.5" y="630" width="249" height="98" fill="none" stroke="#534AB7" stroke-width="1.5"/>
+</g>
+<g id="Tanque">
+<rect x="773.0" y="630" width="256" height="116" fill="#F4F3FE"/>
+<rect x="773.0" y="630" width="256" height="44" fill="#CECBF6"/>
+<text x="901.0" y="646" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11" font-style="italic" fill="#3C3489">&#171;abstract&#187;</text>
+<text x="901.0" y="665" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="bold" font-style="italic" fill="#3C3489">Tanque</text>
+<line x1="773.0" y1="674" x2="1029.0" y2="674" stroke="#534AB7" stroke-width="1"/>
+<line x1="773.0" y1="684" x2="1029.0" y2="684" stroke="#534AB7" stroke-width="1"/>
+<text x="783.0" y="701" font-family="Consolas, 'DejaVu Sans Mono', 'Courier New', monospace" font-size="12" fill="#2C2C2A" xml:space="preserve">+ getTipo(): String</text>
+<text x="783.0" y="719" font-family="Consolas, 'DejaVu Sans Mono', 'Courier New', monospace" font-size="12" fill="#2C2C2A" xml:space="preserve"># calcularDanio(base: int): int</text>
+<text x="783.0" y="737" font-family="Consolas, 'DejaVu Sans Mono', 'Courier New', monospace" font-size="12" fill="#2C2C2A" xml:space="preserve">+ recibirDanio(puntos: int): int</text>
+<rect x="773.0" y="630" width="256" height="116" fill="none" stroke="#534AB7" stroke-width="1.5"/>
+</g>
+<g id="Healer">
+<rect x="1389.5" y="630" width="249" height="116" fill="#F4F3FE"/>
+<rect x="1389.5" y="630" width="249" height="44" fill="#CECBF6"/>
+<text x="1514.0" y="646" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11" font-style="italic" fill="#3C3489">&#171;abstract&#187;</text>
+<text x="1514.0" y="665" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="bold" font-style="italic" fill="#3C3489">Healer</text>
+<line x1="1389.5" y1="674" x2="1638.5" y2="674" stroke="#534AB7" stroke-width="1"/>
+<line x1="1389.5" y1="684" x2="1638.5" y2="684" stroke="#534AB7" stroke-width="1"/>
+<text x="1399.5" y="701" font-family="Consolas, 'DejaVu Sans Mono', 'Courier New', monospace" font-size="12" fill="#2C2C2A" xml:space="preserve">+ getTipo(): String</text>
+<text x="1399.5" y="719" font-family="Consolas, 'DejaVu Sans Mono', 'Courier New', monospace" font-size="12" fill="#2C2C2A" xml:space="preserve"># calcularDanio(base: int): int</text>
+<text x="1399.5" y="737" font-family="Consolas, 'DejaVu Sans Mono', 'Courier New', monospace" font-size="12" fill="#2C2C2A" xml:space="preserve">+ ayudarCompanero(): int</text>
+<rect x="1389.5" y="630" width="249" height="116" fill="none" stroke="#534AB7" stroke-width="1.5"/>
+</g>
+<g id="Tracer">
+<rect x="70" y="830" width="249" height="84" fill="#EBF8F3"/>
+<rect x="70" y="830" width="249" height="30" fill="#9FE1CB"/>
+<text x="194.5" y="850" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="bold" fill="#085041">Tracer</text>
+<line x1="70" y1="860" x2="319" y2="860" stroke="#0F6E56" stroke-width="1"/>
+<line x1="70" y1="870" x2="319" y2="870" stroke="#0F6E56" stroke-width="1"/>
+<text x="80" y="887" font-family="Consolas, 'DejaVu Sans Mono', 'Courier New', monospace" font-size="12" fill="#2C2C2A" xml:space="preserve">+ getTipo(): String</text>
+<text x="80" y="905" font-family="Consolas, 'DejaVu Sans Mono', 'Courier New', monospace" font-size="12" fill="#2C2C2A" xml:space="preserve"># calcularDanio(base: int): int</text>
+<rect x="70" y="830" width="249" height="84" fill="none" stroke="#0F6E56" stroke-width="1.5"/>
+</g>
+<g id="Soldado76">
+<rect x="343" y="830" width="249" height="84" fill="#EBF8F3"/>
+<rect x="343" y="830" width="249" height="30" fill="#9FE1CB"/>
+<text x="467.5" y="850" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="bold" fill="#085041">Soldado76</text>
+<line x1="343" y1="860" x2="592" y2="860" stroke="#0F6E56" stroke-width="1"/>
+<line x1="343" y1="870" x2="592" y2="870" stroke="#0F6E56" stroke-width="1"/>
+<text x="353" y="887" font-family="Consolas, 'DejaVu Sans Mono', 'Courier New', monospace" font-size="12" fill="#2C2C2A" xml:space="preserve">+ getTipo(): String</text>
+<text x="353" y="905" font-family="Consolas, 'DejaVu Sans Mono', 'Courier New', monospace" font-size="12" fill="#2C2C2A" xml:space="preserve"># calcularDanio(base: int): int</text>
+<rect x="343" y="830" width="249" height="84" fill="none" stroke="#0F6E56" stroke-width="1.5"/>
+</g>
+<g id="Reinhardt">
+<rect x="640" y="830" width="249" height="84" fill="#EBF8F3"/>
+<rect x="640" y="830" width="249" height="30" fill="#9FE1CB"/>
+<text x="764.5" y="850" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="bold" fill="#085041">Reinhardt</text>
+<line x1="640" y1="860" x2="889" y2="860" stroke="#0F6E56" stroke-width="1"/>
+<line x1="640" y1="870" x2="889" y2="870" stroke="#0F6E56" stroke-width="1"/>
+<text x="650" y="887" font-family="Consolas, 'DejaVu Sans Mono', 'Courier New', monospace" font-size="12" fill="#2C2C2A" xml:space="preserve">+ getTipo(): String</text>
+<text x="650" y="905" font-family="Consolas, 'DejaVu Sans Mono', 'Courier New', monospace" font-size="12" fill="#2C2C2A" xml:space="preserve"># calcularDanio(base: int): int</text>
+<rect x="640" y="830" width="249" height="84" fill="none" stroke="#0F6E56" stroke-width="1.5"/>
+</g>
+<g id="Winston">
+<rect x="913" y="830" width="249" height="84" fill="#EBF8F3"/>
+<rect x="913" y="830" width="249" height="30" fill="#9FE1CB"/>
+<text x="1037.5" y="850" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="bold" fill="#085041">Winston</text>
+<line x1="913" y1="860" x2="1162" y2="860" stroke="#0F6E56" stroke-width="1"/>
+<line x1="913" y1="870" x2="1162" y2="870" stroke="#0F6E56" stroke-width="1"/>
+<text x="923" y="887" font-family="Consolas, 'DejaVu Sans Mono', 'Courier New', monospace" font-size="12" fill="#2C2C2A" xml:space="preserve">+ getTipo(): String</text>
+<text x="923" y="905" font-family="Consolas, 'DejaVu Sans Mono', 'Courier New', monospace" font-size="12" fill="#2C2C2A" xml:space="preserve"># calcularDanio(base: int): int</text>
+<rect x="913" y="830" width="249" height="84" fill="none" stroke="#0F6E56" stroke-width="1.5"/>
+</g>
+<g id="Mercy">
+<rect x="1210" y="830" width="292" height="102" fill="#EBF8F3"/>
+<rect x="1210" y="830" width="292" height="30" fill="#9FE1CB"/>
+<text x="1356.0" y="850" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="bold" fill="#085041">Mercy</text>
+<line x1="1210" y1="860" x2="1502" y2="860" stroke="#0F6E56" stroke-width="1"/>
+<line x1="1210" y1="870" x2="1502" y2="870" stroke="#0F6E56" stroke-width="1"/>
+<text x="1220" y="887" font-family="Consolas, 'DejaVu Sans Mono', 'Courier New', monospace" font-size="12" fill="#2C2C2A" xml:space="preserve">+ getTipo(): String</text>
+<text x="1220" y="905" font-family="Consolas, 'DejaVu Sans Mono', 'Courier New', monospace" font-size="12" fill="#2C2C2A" xml:space="preserve"># calcularDanio(base: int): int</text>
+<text x="1220" y="923" font-family="Consolas, 'DejaVu Sans Mono', 'Courier New', monospace" font-size="12" fill="#2C2C2A" xml:space="preserve">+ curarAliado(aliado: Personaje): int</text>
+<rect x="1210" y="830" width="292" height="102" fill="none" stroke="#0F6E56" stroke-width="1.5"/>
+</g>
+<g id="Ana">
+<rect x="1526" y="830" width="292" height="102" fill="#EBF8F3"/>
+<rect x="1526" y="830" width="292" height="30" fill="#9FE1CB"/>
+<text x="1672.0" y="850" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="bold" fill="#085041">Ana</text>
+<line x1="1526" y1="860" x2="1818" y2="860" stroke="#0F6E56" stroke-width="1"/>
+<line x1="1526" y1="870" x2="1818" y2="870" stroke="#0F6E56" stroke-width="1"/>
+<text x="1536" y="887" font-family="Consolas, 'DejaVu Sans Mono', 'Courier New', monospace" font-size="12" fill="#2C2C2A" xml:space="preserve">+ getTipo(): String</text>
+<text x="1536" y="905" font-family="Consolas, 'DejaVu Sans Mono', 'Courier New', monospace" font-size="12" fill="#2C2C2A" xml:space="preserve"># calcularDanio(base: int): int</text>
+<text x="1536" y="923" font-family="Consolas, 'DejaVu Sans Mono', 'Courier New', monospace" font-size="12" fill="#2C2C2A" xml:space="preserve">+ curarAliado(aliado: Personaje): int</text>
+<rect x="1526" y="830" width="292" height="102" fill="none" stroke="#0F6E56" stroke-width="1.5"/>
+</g>
+<g id="FabricaHeroes">
+<rect x="60.5" y="1010" width="379" height="100" fill="#F7F6F2"/>
+<rect x="60.5" y="1010" width="379" height="30" fill="#D3D1C7"/>
+<text x="250.0" y="1030" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="bold" fill="#2C2C2A">FabricaHeroes</text>
+<line x1="60.5" y1="1040" x2="439.5" y2="1040" stroke="#5F5E5A" stroke-width="1"/>
+<line x1="60.5" y1="1084" x2="439.5" y2="1084" stroke="#5F5E5A" stroke-width="1"/>
+<text x="70.5" y="1057" font-family="Consolas, 'DejaVu Sans Mono', 'Courier New', monospace" font-size="12" fill="#2C2C2A" text-decoration="underline" xml:space="preserve">+ CLAVES: String[]</text>
+<text x="70.5" y="1075" font-family="Consolas, 'DejaVu Sans Mono', 'Courier New', monospace" font-size="12" fill="#2C2C2A" text-decoration="underline" xml:space="preserve">+ ETIQUETAS: String[]</text>
+<text x="70.5" y="1101" font-family="Consolas, 'DejaVu Sans Mono', 'Courier New', monospace" font-size="12" fill="#2C2C2A" text-decoration="underline" xml:space="preserve">+ crear(clave: String, nombre: String): Personaje</text>
+<rect x="60.5" y="1010" width="379" height="100" fill="none" stroke="#5F5E5A" stroke-width="1.5"/>
+</g>
+<g id="RepositorioEquipo">
+<rect x="687.5" y="1010" width="365" height="84" fill="#F7F6F2"/>
+<rect x="687.5" y="1010" width="365" height="30" fill="#D3D1C7"/>
+<text x="870.0" y="1030" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="bold" fill="#2C2C2A">RepositorioEquipo</text>
+<line x1="687.5" y1="1040" x2="1052.5" y2="1040" stroke="#5F5E5A" stroke-width="1"/>
+<line x1="687.5" y1="1050" x2="1052.5" y2="1050" stroke="#5F5E5A" stroke-width="1"/>
+<text x="697.5" y="1067" font-family="Consolas, 'DejaVu Sans Mono', 'Courier New', monospace" font-size="12" fill="#2C2C2A" text-decoration="underline" xml:space="preserve">+ guardar(ruta: Path, lista: List&lt;Persistible&gt;)</text>
+<text x="697.5" y="1085" font-family="Consolas, 'DejaVu Sans Mono', 'Courier New', monospace" font-size="12" fill="#2C2C2A" text-decoration="underline" xml:space="preserve">+ cargar(ruta: Path): List&lt;Personaje&gt;</text>
+<rect x="687.5" y="1010" width="365" height="84" fill="none" stroke="#5F5E5A" stroke-width="1.5"/>
+</g>
+<g id="Main">
+<rect x="1287.0" y="1010" width="386" height="154" fill="#F7F6F2"/>
+<rect x="1287.0" y="1010" width="386" height="30" fill="#D3D1C7"/>
+<text x="1480.0" y="1030" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="bold" fill="#2C2C2A">Main</text>
+<line x1="1287.0" y1="1040" x2="1673.0" y2="1040" stroke="#5F5E5A" stroke-width="1"/>
+<line x1="1287.0" y1="1102" x2="1673.0" y2="1102" stroke="#5F5E5A" stroke-width="1"/>
+<text x="1297.0" y="1057" font-family="Consolas, 'DejaVu Sans Mono', 'Courier New', monospace" font-size="12" fill="#2C2C2A" text-decoration="underline" xml:space="preserve">- ARCHIVO: Path</text>
+<text x="1297.0" y="1075" font-family="Consolas, 'DejaVu Sans Mono', 'Courier New', monospace" font-size="12" fill="#2C2C2A" text-decoration="underline" xml:space="preserve">- TECLADO: Scanner</text>
+<text x="1297.0" y="1093" font-family="Consolas, 'DejaVu Sans Mono', 'Courier New', monospace" font-size="12" fill="#2C2C2A" text-decoration="underline" xml:space="preserve">- equipo: List&lt;Personaje&gt;</text>
+<text x="1297.0" y="1119" font-family="Consolas, 'DejaVu Sans Mono', 'Courier New', monospace" font-size="12" fill="#2C2C2A" text-decoration="underline" xml:space="preserve">+ main(args: String[])</text>
+<text x="1297.0" y="1137" font-family="Consolas, 'DejaVu Sans Mono', 'Courier New', monospace" font-size="12" fill="#2C2C2A" text-decoration="underline" xml:space="preserve">- ejecutar(opcion: int)</text>
+<text x="1297.0" y="1155" font-family="Consolas, 'DejaVu Sans Mono', 'Courier New', monospace" font-size="12" fill="#2C2C2A" text-decoration="underline" xml:space="preserve">- leerEntero(msg: String, min: int, max: int): int</text>
+<rect x="1287.0" y="1010" width="386" height="154" fill="none" stroke="#5F5E5A" stroke-width="1.5"/>
+</g>
+<text x="24" y="1252" text-anchor="start" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#444441">Paquetes:</text>
+<rect x="110" y="1238" width="22" height="16" fill="#B5D4F4" stroke="#185FA5" stroke-width="1.5"/>
+<text x="140" y="1251" text-anchor="start" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#444441">modelo</text>
+<rect x="216" y="1238" width="22" height="16" fill="#CECBF6" stroke="#534AB7" stroke-width="1.5"/>
+<text x="246" y="1251" text-anchor="start" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#444441">modelo.roles</text>
+<rect x="364" y="1238" width="22" height="16" fill="#9FE1CB" stroke="#0F6E56" stroke-width="1.5"/>
+<text x="394" y="1251" text-anchor="start" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#444441">modelo.heroes</text>
+<rect x="519" y="1238" width="22" height="16" fill="#FAC775" stroke="#854F0B" stroke-width="1.5"/>
+<text x="549" y="1251" text-anchor="start" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#444441">interfaces</text>
+<rect x="653" y="1238" width="22" height="16" fill="#F7C1C1" stroke="#A32D2D" stroke-width="1.5"/>
+<text x="683" y="1251" text-anchor="start" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#444441">excepciones</text>
+<rect x="794" y="1238" width="22" height="16" fill="#D3D1C7" stroke="#5F5E5A" stroke-width="1.5"/>
+<text x="824" y="1251" text-anchor="start" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#444441">app y persistencia</text>
+</svg>
